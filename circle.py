@@ -1,6 +1,6 @@
 import math
 
-class circle:
+class Circle:
     def __init__(self, radius):
         self.radius = radius
 
@@ -11,7 +11,7 @@ class circle:
         return 2 * self.radius
 
 def main():
-    c1 = circle(14)
+    c1 = Circle(14)
     print(c1.radius)
     area = c1.calc_area()
     print(f"{area:.3f}")

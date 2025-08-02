@@ -26,12 +26,7 @@ if __name__ == "__main__":
 
 
 
-
-
-
-
-
-
-#first, last = name.split(" ")
-#chat = "we're good"
-#print(last,chat)
+"""name = input("enter your first and last name:")
+first, last = name.split(" ")
+chat = "we're good"
+print(first,chat)"""

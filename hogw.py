@@ -6,4 +6,4 @@ studs = [
 ]
 
 for stud in studs:
-    print(stud["name"], stud["house"], stud["class"], sep=", ")
+    print(f'{stud["name"]} is from {stud["house"]} and in {stud["class"]}')

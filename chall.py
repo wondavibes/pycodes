@@ -1,16 +1,30 @@
-from math import pi
+def main():
+    s = input("enter an alphanumeric string: ")
+    print(sort(s))
+
+def sort(s):
+    if not s:
+        return "Invalid input, please enter alphanumeric characters only."
+    lowers = []
+    uppers = []
+    odds = []
+    evens = []
+    zero = []
+    for i in s:
+        if i.islower():
+            lowers.append(i)
+        elif i.isupper():
+            uppers.append(i)
+        elif i.isdigit():
+            if int(i) % 2 == 1:
+                odds.append(i)
+            elif int(i) == 0:
+                zero.append(i)
+            else:
+                evens.append(i)
+    return ''.join(sorted(lowers) + sorted(uppers) + odds + zero + evens)
+        
 
 
-quest = input("Tell me your password")
-print("the first letter you entered was",quest.strip()[0] , sep=" ")
-
-print(f"the value of pi is approximately {pi:.3f}")
-
-
-
-
-
-print("""this is an example of a
-      string that spans across many lines
-         and it is enclosed by triple quotes normally
-      used for comments""")
+if __name__ == "__main__":
+    main()

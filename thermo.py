@@ -23,11 +23,9 @@ def main():
         else:
             print("invalid choice, please try again")
     
-
 def  cel_2_far(x):
     y = (x * 1.8) + 32
     return y 
-
 
 def far_2_cel(a):
     b = (a - 32) * 5/9
