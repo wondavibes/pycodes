@@ -3,7 +3,7 @@ def main():
     print(sort(s))
 
 def sort(s):
-    if not s:
+    if not s or s == "" or not s.isalnum():
         return "Invalid input, please enter alphanumeric characters only."
     lowers = []
     uppers = []
