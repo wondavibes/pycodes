@@ -15,5 +15,13 @@ match name:
         print("Beggie Beggie")
     case "Testimony" :
         print("Baby of the house")
+    case "Khalid" :
+        print("Trouble in sneakers and pencil jeans")
+    case "David":
+        print("Mummy's Pet")
+    case "Akwaugo":
+        print("Egg roll")
+    case "Adeola":
+        print("The boss lady")
     case _:
         print("Who?")    
